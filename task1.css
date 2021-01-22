@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    width: 358px;
+    height: 196px;
+    background: #CCCCCC;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.menu-item {
+    display: box;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: static;
+    align-self: stretch;
+}
+
+.menu-item a {
+    align-self: stretch;
+    position: static;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+.menu-item:focus {
+    background: white;
+}
+
+.menu-item:hover {
+    background: #9C9C9C;
+}
+
+.menu-item:first-child:hover {
+    border-radius: 10px 10px 0 0;
+    background: #9C9C9C;
+}
+
+.menu-item:last-child:hover {
+    border-radius: 0 0 10px 10px;
+    background: #9C9C9C;
+    border-bottom: 1px solid;
+}
+
+a:visited {
+    color: black;
+}
+
+.menu-item a:active {
+    color: cyan;
+}
